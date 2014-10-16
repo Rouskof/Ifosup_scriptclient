@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<p class="congres belge">paragraphe 1</p>
+	
+	<p class="congres">paragraphe<span class="belge">2</span></p>
+	
+	<p class="congres">paragraphe 3</p>
+	
+	<script>
+		
+		//recupere le premier noeud "congres"
+		document.querySelector(".congres").style.color = "red";
+		
+		// compte combien d'élément avec la classe "congrès" existe
+		console.log("nombre d'élément avec la classe \"congres\" = "+document.querySelectorAll(".congres").length);
+		
+		// affiche le nombre de noeuds avec congrès ou belge
+		console.log("nombre d'élément avec la classe \"congres\" ou \"belge\" = "+document.querySelectorAll(".congres,.belge").length);
+		
+		// affiche le nombre de p possédant une classe
+		console.log("nombre de p avec une classe = "+document.querySelectorAll("p[class]").length);
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<button type="button" id="btn">Cliquez-moi</button>
+	<br>
+	<button type="button" id="btn2">idem</button>
+	
+	<script>
+		(function() 
+		 {
+		 	// sauvegarde du noeud
+		 	var monBeauBouton = document.getElementById('btn');
+		 	var monBeauBouton2 = document.getElementById('btn2');
+		 	
+		 	// ajout d'un event handler
+		 	monBeauBouton.onclick = function()
+			{
+				alert('coucou');
+			}
+			// test de compatibilité
+			if (monBeauBouton2.addEventListener) 
+			{
+				// ajout d'un event listener
+				monBeauBouton2.addEventListener('click', function() 
+				{
+				alert('coucou2')
+				}, false);
+			}
+			else 
+			{
+				// si pas supporté IEB et -
+				monBeauBouton2.attachEvent('click', function() 
+										   {
+										   alert('coucou2');
+										   });
+			}
+		 }
+		)();
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var info = 
+			{
+				// création de méthode
+				"nom" : function()
+				{
+					alert("charge les noms");
+				},
+				"rechlaetitia" : function()
+				{
+				alert("ou est laetitia");
+				}
+			};
+		window.addEventListener("load", info.nom,false);
+		
+		document.addEventListener("click", info.rechlaetitia,false);
+	</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+			// déclaration déjeuner
+			var dejeuner = ['tartine', 'oeuf - bacon', 'salade de fruit'];
+			
+			// déclaration diner
+			var diner = ['steak frites', 'américain frites', 'moules frites'];
+			// déclaration souper
+			var souper = ['soupe', 'salade', 'yaourt'];
+			
+			// le menu
+			var menu = [dejeuner, diner, souper];
+			document.write(menu[0][1]+'<br>');
+			
+			// ajouter un déjeuner
+			dejeuner.push('Pancake');
+			document.write(menu[0][3]+'<br>');
+			
+			// concatenation
+			var mesmenu = menu.join('  et ');
+			document.write(mesmenu+'<br>');
+			
+			// afficher une liste définie
+			var lesPlusMeilleur = diner.slice(0,2);
+			document.write(lesPlusMeilleur+'<br>');
+			
+			// suprimer le premier
+			dejeuner.shift();
+			document.write(dejeuner+'<br>');
+			
+			// ajouter au début
+			dejeuner.unshift('Biscotte confiture');
+			document.write(dejeuner+'<br>');
+			
+			// récupere le dernier et le supprime
+			var mondernier = dejeuner.pop();
+			document.write('extrait : '+mondernier+'<br>');
+			document.write(dejeuner+'<br>');
+			
+			// combine plusieurs tableau
+			var mesRepasChaud = diner.concat(souper);
+			document.write(mesRepasChaud.join('<br>')+'<br>');
+			
+			//trie un tableau
+			var dinerTrie = diner.sort();
+			document.write('Diner trié : <br>'+dinerTrie.join('<br>')+'<br>');
+	</script>
+</body>
+</html>

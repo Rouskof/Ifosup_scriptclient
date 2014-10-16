@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	table{
+		border-collapse:collapse;
+	}
+	td, th{
+		border: 1px solid black;
+	}
+	</style>
+</head>
+<body>
+	<script>
+		var date=new Date();
+		var nombre=date.getDate();
+		
+		var t_jour=new Array('lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche');
+		
+		var annee=date.getFullYear();
+		
+		
+		var t_mois=new Array('janvier','fevrier','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','decembre');
+		
+		document.write('nous somme le '+(t_jour[(date.getDay()-1)])+' '+nombre+' '+(t_mois[(date.getMonth())])+' '+annee);
+	</script>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<script>
+		
+		var t_nom=new Array('Jeremy','Laetitia','Brice','Adrien','Julien','Kevin','Quentin','Ali');
+		var t_jour2=new Array('L','M','M','J','V','S','D');
+		document.write('<table>');
+		
+	
+		
+		document.write('<tr>');
+		document.write('<th rowspan="2">Nom</th>');
+		document.write('<th colspan="30">Septembre</th>');
+		document.write('</tr>');
+		document.write('<tr>');
+		
+		var l = 0;
+		for (var j=0; j<30; j++)
+		{
+			
+			document.write('<td>'+t_jour2[l++]+'-'+(j+1)+'</td>');
+			
+			if (l==7)
+			{
+				l=0;
+			}
+			
+		}
+		
+		
+
+		
+		for (var i = 0; i<8; i++)
+		{
+		document.write('<tr>')
+		document.write('<td>'+t_nom[i]+'</td>');
+			for (var k = 0; k<30; k++)
+			{
+			document.write('<td>'+' '+'</td>');
+			}
+		} 
+			
+		document.write('</tr>');
+		
+		
+		document.write('</table>');
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

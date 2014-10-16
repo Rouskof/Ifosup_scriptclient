@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div id="header">
+		blabla
+	</div>
+	
+	<p>texte1</p>
+	
+	<p>texte2</p>
+	
+	<p id="debut" class="congres">contenu<span class="belge"> paragraphe</span></p>
+	
+	<p class="congres">contenu paragraphe 2</p>
+	
+	<script>
+		document.getElementById('header').style.color= "red";
+		
+		document.getElementsByTagName('p')[0].style.color="yellow";
+		
+		console.log(document.getElementsByTagName('p').length);
+		
+		document.getElementsByClassName("congres")[0].style.color="green";
+		
+//		document.getElementsByClassName("congres belge").style.color="blue";
+		
+		document.getElementById("debut").getElementsByClassName("belge")[0].style.color="pink";
+		
+	</script>
+</body>
+</html>

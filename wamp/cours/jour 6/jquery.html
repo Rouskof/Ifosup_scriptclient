@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>utilisateur de jQuery</title>
+</head>
+<body>
+	<p name="toto">paragraphe 1</p>
+	<p>paragraphe 2</p>
+	<p name="lulu">paragraphe 3</p>
+	<p>paragraphe 4</p>
+	<ul>
+		<li page="page2.html">ligne 1</li>
+		<li name="julie" page="page3.html">ligne 2</li>
+		<li>ligne 3</li>
+		<li>ligne 4</li>
+	</ul>
+	<a href="https://www.google.be">google</a>
+	<button type="button" id="afficher">affiche</button>
+	<button type="button" id="masquer">masquer</button>
+	<div id="cible"></div>
+	<script src="../../js/jquery.js"></script>
+	<script>
+		//$(selecteur).méthode()
+		$("p[name]").css({"background-color" : "red", "color" : "yellow"});
+		$("#afficher").hide();
+		$("button").hover(function()
+						  {
+						  $(this).css("cursor" , "pointer");
+						  });
+		$("#masquer").click(function()
+						  {
+						  $("p").hide(500);
+						  $("#masquer").hide(500);
+						  $("#afficher").show(500);
+						  });
+		$("#afficher").click(function()
+						  {
+						  $("#afficher").hide(500);
+						  $("#masquer").show(500);
+						  $("p").show(500);
+						  });
+		$("a").bind("click", function(e)
+						  {
+						    e.preventDefault();
+							$(this).css("color", "red");
+						  alert("click");
+						  });
+						  
+		$("[name = toto]").html("DRAAAAAAAAAAAAAAAAAAAAAAAAAAAAVEN");
+		$("[name = toto]").html( $("[name = toto]").html()+" et UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUdyr");
+		
+//		$("#cible").load("page2.html");
+		
+		$("li").click(function()
+					  {
+					  $("#cible").load($(this).attr('page'));
+					  });
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

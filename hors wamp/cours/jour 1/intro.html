@@ -1,0 +1,172 @@
+<html>
+<body>
+
+<script>
+console.log("pour les erreurs");
+
+
+function meteo() 
+        {
+        if ( !Math.random ) 
+            {
+            document.write('<prec> --- je ne sais pas --- </pre>');
+            }   
+        else {
+                if ( Math.floor( (Math.random()*2))==0 ) 
+                {
+                document.write('<strong> --- Plein soleil --- </strong>');
+                }
+                else 
+                {
+                document.write('<em> --- Drache nationale --- </em>');
+                }
+            }
+         }
+        
+        
+        
+        
+      
+</script>
+<p> Quel temps pour aujourd'hui?</p>
+<script>
+    meteo();
+</script>
+
+<br>
+<script>
+//        déclaration de variable
+        var toto = '&lt;/scr'+'ipt>';
+        var warning = 'ne jamais mettre '+toto+' dans une chaine' ;
+        document.write(warning);
+</script>
+<br>
+<script>
+//    type de variable
+
+    var typeBooleen = true; //false
+    var typeBooleen = 1; // 0
+    var typeExponentielle = 2.55e+2;
+    var typeHexadecimal = 0xFF;
+    var typeOctal = 0377;
+    var typeDecimal = 256;
+    
+    var nom = "kevin\" renard";
+    var prenom = 'lessire'; // \n pour passez a la ligne \t pour tabulation
+    
+    var t_nom = new Array(3);
+    t_nom[0] ='Lulu';
+    t_nom[1] ='toto';
+    t_nom[2] ='Jules';
+    t_nom[3] ='marie';
+    
+    var t_jour = new Array('lundi','mardi','mercredi');
+    
+    document.write(t_nom[2]);
+    
+    document.write('<h3>Opération</h3>');
+    var a = 1;
+    document.write(a++ + '<br>'); // opération après afichage
+    document.write(++a + '<br>'); // opération avant affichage
+    a+=3; // opération obligatoire hors affichage
+    document.write(a + '<br>'); 
+    
+</script>
+
+<script>
+	if (6 == a)
+	{
+		document.write('égale a 6');
+	}
+	else
+	{
+		document.write('oups !');
+	}
+	document.write(( 6 == a) ? '<br>égale' : 'oups' );
+</script>
+<br>
+<script>
+	document.write('le switch <br>');
+	var civil = prompt('entrer votre etat civil !! (vcmd)');
+	switch( civil ) 
+	{
+		case 'v':
+			mess = 'pas de chance';
+			break;
+		case 'c':
+			mess = 'Le numero de tel please';
+			break;
+		case 'm':
+			mess = 'passe';
+			break;
+		case 'd':
+			mess = 'pas le bon';
+			break;
+		default:
+			mess = 'ptit con';
+			break;
+	}
+	document.write(mess+'<br>');
+</script>
+
+<script>
+	var cpt = 0;
+	while (cpt < 4)
+	{
+		document.write(t_nom[cpt++]+'<br>');
+	}
+	document.write(cpt+'<br>');
+	for (var i = --cpt; i>=0; i--)
+	{
+	document.write(t_nom[i]+'<br>');
+	}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+<img src="../../img/images.jpg" class="demo" title="image starbuck" id="monImage">
+	
+	<script>
+		if(document.getElementById("monImage").hasAttribute("class"))
+		{
+			document.write(document.getElementById("monImage").getAttribute("class"));
+		}
+		var toto = document.getElementById("monImage");
+		if(toto.hasAttribute("class"))
+		{
+			document.write(toto.getAttribute("class"));
+		}
+		toto.setAttribute("title","Starbuck !!!!!!!");
+	</script>
+</body>
+</html>

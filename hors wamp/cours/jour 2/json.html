@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function recup()
+		{
+			//stocke les nom dans une variable json
+			var developer =
+			[
+				"jeremy",
+				"laetitia",
+				"Brice",
+				"Adrien",
+				"Damien",
+				"Julien",
+				"Kévin",
+				"Quentin",
+				"Ali"
+			];
+			
+			var nbDeveloper = developer.length;
+			if (nbDeveloper>0)
+			{
+				for (var i=0; i < nbDeveloper;i++)
+				{
+					var personne = developer[i];
+					if (personne === "laetitia")
+					{
+						document.write('bonjour ');
+					}
+					document.write(personne+'<br>');
+					
+				}
+			}
+		}
+		
+		// appelle de la fonction
+		
+		recup();
+	</script>
+	
+	
+	
+	
+</body>
+</html>

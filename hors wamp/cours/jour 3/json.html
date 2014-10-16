@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>utilisation du json dans le localStorage</title>
+</head>
+<body>
+	<script>
+		var mesSandwich = 
+			{
+				'diner' : 
+				[
+					{
+						'nom' : 'Fromage jambon',
+						'Pain' : 'blanc'	
+					},
+					{
+						'nom' : 'Poulet curry',
+						'pain' : 'Entier'
+					}
+				],
+				'souper' : 
+				[
+					{
+						'nom' : 'Américain',
+						'pain' : 'gris'
+					}
+				]
+			}
+		// transforme l'objet JSON en une chaine
+		var dinerChaine = JSON.stringify(mesSandwich);
+		
+		// Sauvegarde dans le navigateur
+		localStorage.setItem('sandwich', dinerChaine);
+		
+	</script>
+</body>
+</html>
